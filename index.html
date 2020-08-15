@@ -43,7 +43,7 @@ document.getElementById('btn').addEventListener('click', function(){
 
 
 
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=5769b0b29072dcb668501db109cd9092`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=5769b0b29072dcb668501db109cd9092`)
     .then( res => res.json())
     .then( data => {
         const description = data.weather[0].description;
